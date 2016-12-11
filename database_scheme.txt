@@ -1,0 +1,61 @@
+{
+  group_types: {
+    "vet": {
+      "pet_name": "string",
+      "pet_type": "string",
+      "pet_age": "int",
+      last_vaccine: {
+        "name": "string",
+        date: "datetime"
+      }
+    }
+  },
+  groups: {
+    group_id: "uid",
+    type: "vet",
+    contact_info: {
+      location: "cordinates\stringaddress",
+      phone_num: "127836182",
+      mail: "xxxxx@xxxx.com",
+      website: "www.roeefalafel.com"
+    },
+    customers: {
+      user_id1: {
+        created_at: "date/time",
+        pet_name: "shocko",
+        pet_type: "dog",
+        last_vaccine: "20-10-201600: 00: 00"
+      },
+      user_id2: {
+        created_at: "date/time",
+        pet_name: "Mr.Scraffles",
+        pet_type: "cat",
+        pet_age: "2712",
+        last_vaccine: {
+          name: "vaccine_name",
+          date: "%d-%m-%Y%H: %M: %S"
+        }
+      }
+    },
+    calendar: {
+      days: [
+
+]
+    }
+  },
+  users: {
+    user_id: "uid",
+    created_at: "date/time",
+    groups: {
+      group_id1: "uid",
+      group_id2: "uid"
+    },
+    appointmets: {
+      group_id1: {
+        app_id: "uid",
+        date: "date",
+        length: "minutes"
+      }
+    }
+  }
+}
